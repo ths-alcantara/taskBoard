@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46937fbf-445a-45b9-84dc-b28f9f8e63b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thaissouza/Main.java" afterDir="false" />
+    <list default="true" id="46937fbf-445a-45b9-84dc-b28f9f8e63b2" name="Changes" comment="start project">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thaissouza/persistence/dao/BoardColumnDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thaissouza/persistence/dao/BoardDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thaissouza/persistence/entity/BlockEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thaissouza/persistence/entity/BoardColumnEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thaissouza/persistence/entity/BoardColumnKindEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thaissouza/persistence/entity/BoardEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thaissouza/persistence/entity/CardEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thaissouza/service/BoardQueryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thaissouza/service/BoardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.changelog/migrations/db.changelog-202609231540.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.changelog/migrations/db.changelog-202609231556.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.changelog/migrations/db.changelog-202609231609.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -28,9 +36,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="3JNnIdiXS1jpblDo3YDyK2NhUku" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,9 +51,15 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Thaís/Códigos/Dio Projects/bankProject/taskBoard/src/main/resources/db.changelog/migrations",
     "onboarding.tips.debug.path": "C:/Users/Thaís/Códigos/Dio Projects/bankProject/taskBoard/src/main/java/com/thaissouza/Main.java"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Thaís\Códigos\Dio Projects\bankProject\taskBoard\src\main\resources\db.changelog\migrations" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,6 +69,19 @@
       <option name="presentableId" value="Default" />
       <updated>1789510317984</updated>
     </task>
+    <task id="LOCAL-00001" summary="start project">
+      <option name="closed" value="true" />
+      <created>1789513131589</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1789513131589</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="start project" />
+    <option name="LAST_COMMIT_MESSAGE" value="start project" />
   </component>
 </project>
