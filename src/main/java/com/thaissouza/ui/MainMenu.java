@@ -65,7 +65,7 @@ public class MainMenu {
 
         System.out.println("Informe o nome da coluna de tarefa cancelada");
         var cancelColumnName = scanner.next();
-        var cancelColumn = createColumn(initialColumnName,BoardColumnKindEnum.CANCEL, additionalColumns + 1);
+        var cancelColumn = createColumn(initialColumnName,BoardColumnKindEnum.CANCEL, additionalColumns + 2);
         columns.add(finalColumn);
 
         entity.setBoardColumns(columns);

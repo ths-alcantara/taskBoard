@@ -1,6 +1,7 @@
 package com.thaissouza;
 
 import com.thaissouza.persistence.migration.MigrationStrategy;
+import com.thaissouza.ui.MainMenu;
 
 import java.sql.SQLException;
 
@@ -11,5 +12,8 @@ public class Main {
         try(var connection = getConnection()){
             new MigrationStrategy(connection).executeMigration();
         }
+
+        new MainMenu().execute();
+
     }
 }
