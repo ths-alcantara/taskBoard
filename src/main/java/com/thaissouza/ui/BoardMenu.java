@@ -1,5 +1,6 @@
 package com.thaissouza.ui;
 
+import com.thaissouza.dto.BoardColumnInfoDTO;
 import com.thaissouza.persistence.entity.BoardColumnEntity;
 import com.thaissouza.persistence.entity.BoardColumnKindEnum;
 import com.thaissouza.persistence.entity.BoardEntity;
@@ -71,7 +72,17 @@ public class BoardMenu {
         }
     }
 
-    private void moveCard() {
+    private void moveCard() throws SQLException{
+        System.out.println("Informe o id do card que deseja mover para a próxima coluna.");
+        var cardId = scanner.nextLong();
+        var boardColumnsInfo = entity.getBoardColumns().stream()
+                .map(bc -> new BoardColumnInfoDTO(bc.getId(), bc.getOrder(), bc.getKind()))
+                .toList();
+        try(var connection = getConnection()){
+            new CardService(connection).moveToNextColumn(cardId, boardColumnsInfo);
+        } catch (RuntimeException ex){
+            System.out.println(ex.getMessage());
+        }
     }
 
     private void blockCard() {
@@ -80,7 +91,18 @@ public class BoardMenu {
     private void unblockCard() {
     }
 
-    private void cancelCard() {
+    private void cancelCard() throws SQLException{
+        System.out.println("Informe o id do card que deseja cancelar.");
+        var cardId = scanner.nextLong();
+        var cancelColumn = entity.getCancelColumn();
+        var boardColumnsInfo = entity.getBoardColumns().stream()
+                .map(bc -> new BoardColumnInfoDTO(bc.getId(), bc.getOrder(), bc.getKind()))
+                .toList();
+        try(var connection = getConnection()){
+            new CardService(connection).cancel(cardId, cancelColumn.getId(), boardColumnsInfo);
+        } catch (RuntimeException ex){
+            System.out.println(ex.getMessage());
+        }
     }
 
     private void showBoard() throws SQLException{
